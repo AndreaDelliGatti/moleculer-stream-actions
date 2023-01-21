@@ -1,0 +1,27 @@
+{
+  "name": "@andreadelligatti/moleculer-stream-actions",
+  "version": "1.0.0",
+  "description": "This is a POC that involves the use of streams to exchange files between microservices through the use of the moleculerjs framework",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start",
+    "clean": "lerna clean -y",
+    "build": "lerna run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaDelliGatti/moleculer-stream-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaDelliGatti/moleculer-stream-actions/issues"
+  },
+  "homepage": "https://github.com/AndreaDelliGatti/moleculer-stream-actions#readme",
+  "devDependencies": {
+    "lerna": "^6.4.1",
+    "nx": "^15.5.3",
+    "typescript": "^4.9.4"
+  }
+}
