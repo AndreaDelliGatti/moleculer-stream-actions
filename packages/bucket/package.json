@@ -10,7 +10,7 @@
   "scripts": {
     "prebuild": "del-cli ./build",
     "build": "tsc --project .",
-    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js -E dev.env --hot --repl --config src/moleculer.config.ts src/services/**/*.service.ts",
+    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js -e --hot --repl --config src/moleculer.config.ts src/services/**/*.service.ts",
     "start": "moleculer-runner --config build/moleculer.config.js"
   },
   "keywords": [],
