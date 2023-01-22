@@ -29,6 +29,8 @@ export default class BucketService extends Service {
                 },
                 "upload": {
                     handler: (ctx: Context<ReadStream, { filename: string }>) => {
+                        if (!(ctx.params instanceof ReadStream)) throw new Error('invalid read stream');
+
                         let s = fs.createWriteStream(path.join(TMP_FOLDER, ctx.meta.filename));
                         ctx.params.pipe(s);
 
