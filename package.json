@@ -6,7 +6,8 @@
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start",
     "clean": "lerna clean -y",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "dev": "lerna run dev"
   },
   "repository": {
     "type": "git",

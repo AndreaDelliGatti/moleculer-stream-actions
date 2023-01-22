@@ -1,0 +1,27 @@
+#########################################################
+# microservice-a service
+#########################################################
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microa
+spec:
+  selector:
+    matchLabels:
+      app: microa
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: microa
+    spec:
+      containers:
+      - name: microa
+        image: andreadelligatti/microa
+        imagePullPolicy: Never
+        envFrom:
+        - configMapRef:
+            name: common-env
+        env:
+          - name: SERVICES
+            value: a

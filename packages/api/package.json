@@ -1,6 +1,6 @@
 {
-  "name": "@andreadelligatti/bucket",
-  "version": "1.0.0",
+  "name": "@andreadelligatti/api",
+  "version": "0.0.8",
   "description": "",
   "main": "index.js",
   "engines": {
@@ -11,13 +11,15 @@
     "prebuild": "del-cli ./build",
     "build": "tsc --project .",
     "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js -e --hot --repl --config src/moleculer.config.ts src/services/**/*.service.ts",
+    "full": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js -e --hot --repl --config src/moleculer.config.ts src/services/**/*.service.ts",
     "start": "moleculer-runner --config build/moleculer.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moleculer": "^0.14.21",
+    "moleculer": "^0.14.23",
+    "moleculer-web": "^0.10.4",
     "nats": "^2.7.1"
   },
   "devDependencies": {

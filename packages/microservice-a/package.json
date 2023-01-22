@@ -1,5 +1,5 @@
 {
-  "name": "@andreadelligatti/microservice",
+  "name": "@andreadelligatti/microservice-a",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -21,6 +21,7 @@
     "nats": "^2.7.1"
   },
   "devDependencies": {
-    "moleculer-repl": "^0.7.2"
+    "moleculer-repl": "^0.7.2",
+    "ts-node": "^10.9.1"
   }
 }

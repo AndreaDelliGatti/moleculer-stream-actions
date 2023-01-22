@@ -1,0 +1,28 @@
+apiVersion: skaffold/v2alpha3
+
+kind: config
+
+deploy:
+  kubectl:
+    manifests:
+      - ./k8s/*.yaml
+      
+build:
+  local:
+    push: false
+
+  artifacts:
+    - image: andreadelligatti/api
+      context: .
+      docker:
+        dockerfile: ./packages/api/Dockerfile
+
+    - image: andreadelligatti/bucket
+      context: .
+      docker:
+        dockerfile: ./packages/bucket/Dockerfile
+
+    - image: andreadelligatti/microa
+      context: .
+      docker:
+        dockerfile: ./packages/microservice-a/Dockerfile
