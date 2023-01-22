@@ -67,7 +67,7 @@ The file `CHANGELOG.md` is generated (or overwritten) in the root project folder
 *   [Skaffold]
 
 [Moleculer Actions Streaming]: https://moleculer.services/docs/0.14/actions.html#Streaming
-[Skaffold]: skaffold.dev
+[Skaffold]: https://www.skaffold.dev
 [Conventional Commits]: https://www.conventionalcommits.org/en/v1.0.0/
 [commitizen]: https://commitizen-tools.github.io/commitizen/
 [Git-Changelog-command-line]: https://www.npmjs.com/package/g-Changelog-command-line
