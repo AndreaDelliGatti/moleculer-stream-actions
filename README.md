@@ -38,11 +38,37 @@ Run the following command:
 npm run dev
 ```
 
+---
+
+## Commit(s) specification
+
+Every commit MUST follow the [Conventional Commits] specification
+
+The suggested tool helps to commit in the right way is [commitizen] (`python`) but there are many alternatives.
+
+---
+
+## Changelog generation
+
+Following [Conventional Commits] specification, we can **auto generate the project's changelog**.
+The choosen tool is [Git-Changelog-command-line] (`node+java`) whose output format is specified in the file `changelog.mustache` that uses the [Mustache] Grammar.
+
+Generate changelog
+```
+npm run changelog
+```
+The file `CHANGELOG.md` is generated (or overwritten) in the root project folder
+
+---
+
 ## References
 
 *   [Moleculer Actions Streaming]
 *   [Skaffold]
 
 [Moleculer Actions Streaming]: https://moleculer.services/docs/0.14/actions.html#Streaming
-
 [Skaffold]: skaffold.dev
+[Conventional Commits]: https://www.conventionalcommits.org/en/v1.0.0/
+[commitizen]: https://commitizen-tools.github.io/commitizen/
+[Git-Changelog-command-line]: https://www.npmjs.com/package/g-Changelog-command-line
+[Mustache]: https://mustache.github.io
